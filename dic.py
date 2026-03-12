@@ -45,3 +45,35 @@ else:
     print("no")
 
 # Iterate through a dictionary and print keys and values.
+dic={
+    "Name":"Sourabh",
+    "Age":22,
+    "course":"python"
+}
+for key,value in dic.items():
+    print(key ,":",value)
+
+# Merge two dictionaries.
+dic={
+    "name":"sourabh",
+    "Age":24,
+
+}
+
+dic2={
+    "city":"Indore"
+}
+dic.update(dic2)
+
+print(dic)
+# Count the frequency of elements in a list using a dictionary.
+list=[2,3,4,5,2]
+freq={}
+for i in list:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+
+print(freq)
+# Find the maximum value in a dictionary.

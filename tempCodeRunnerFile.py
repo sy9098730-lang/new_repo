@@ -1,9 +1,9 @@
-dic={
-    "Name":"Sourabh",
-    "Age":22,
-    "course":"python"
-}
-if "Sourab" in dic.values():
-    print("yes")
-else:
-    print("no")
+list=[2,3,4,5,2]
+freq={}
+for i in list:
+    if i in freq:
+        freq[i]+=1
+    else:
+        freq[i]=1
+
+print(freq)
