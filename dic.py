@@ -166,6 +166,57 @@ for k,v in dic.items():
     new_dic[v]=k
 
 print(new_dic)
+# Find the key with the highest value in a dictionary.
+dic={
+    1:2,
+    2:9,
+    3:6
+}
+max=0
+for k,v in dic.items():
+    if v>max:
+        max=k
+
+print(max) 
+
+dic = {
+    1:2,
+    2:9,
+    3:6
+}
+
+max_value = 0
+max_key = None
+
+for k,v in dic.items():
+    if v > max_value:
+        max_value = v
+        max_key = k
+
+print(max_key)
+# Count how many times each character appears in a string using a dictionary.
+str="sosssssssurabhyadavsourabh"
+dic={}
+for i in str:
+    if i in dic:
+        dic[i]+=1
+
+    else :
+        dic[i]=1
+
+print(dic)
+
+text = "sssssssourabhyadavsourabh"
+
+dic = {}
+
+for i in text:
+    if i in dic:
+        dic[i] += 1
+    else:
+        dic[i] = 1
+
+print(dic)
 
     
         

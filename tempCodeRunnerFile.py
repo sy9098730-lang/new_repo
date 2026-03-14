@@ -1,10 +1,10 @@
-dic={
-    1:2,
-    2:3,
-    3:6
-}
-new_dic={}
-for k,v in dic.items():
-    new_dic[v]=k
+str="sosssssssurabhyadavsourabh"
+dic={}
+for i in str:
+    if i in dic:
+        dic[i]+=1
 
-print(new_dic)
+    else :
+        dic[i]=1
+
+print(dic)
