@@ -77,3 +77,72 @@ for i in list:
 
 print(freq)
 # Find the maximum value in a dictionary.
+dic={
+    "Name":"Sourabh",
+    "Age":22,
+    "course":"pythone"
+}
+max=dic[0]
+for i in dic:
+    if i > max:
+        max=i
+
+print(max)
+# Find the minimum value in a dictionary.
+dic={
+    4:44,
+    3:45
+}
+min=list(dic.keys())[0]
+for i in dic:
+    if i < min:
+        min=i
+
+print(min)
+# Sort a dictionary by keys.
+
+dic={
+    4:88,
+    3:45,
+    2:55
+}
+sort=dict(sorted(dic.keys()))
+print(sort)
+# Sort a dictionary by keys.
+dic={
+    4:90,
+    3:45,
+    2:55
+}
+sort=list(sorted(dic.values()))
+print(sort)
+# Create a dictionary from two lists (keys list and values list)
+keys = [2,3,4,5]
+values = [22,33,44,55]
+
+dic={}
+for i in range(len(keys)):
+    dic[keys[i]]=values[i]
+
+print(dic)
+#  Find the sum of all values in a dictionary. 
+dic={
+    2:33,
+    4:33,
+    5:33,
+    6:1
+}
+sum=0
+for i in dic.values():
+    sum+=i
+
+print(sum)
+# Create a dictionary using dictionary comprehension.
+dic={x:x for x in range(5)}
+print(dic)
+
+# Remove duplicate values from a dictionary.
+
+
+
+
