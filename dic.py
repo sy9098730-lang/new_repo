@@ -142,6 +142,35 @@ dic={x:x for x in range(5)}
 print(dic)
 
 # Remove duplicate values from a dictionary.
+dic={
+    4:44,
+    6:44,
+    5:33,
+    7:45
+}
+dic2={}
+seen=[]
+for k,v  in dic.items():
+    if v not in seen:
+        dic2[k]=v
+
+print(dic2)
+# Invert a dictionary (swap keys and values).
+dic={
+    1:2,
+    2:3,
+    3:6
+}
+new_dic={}
+for k,v in dic.items():
+    new_dic[v]=k
+
+print(new_dic)
+
+    
+        
+
+
 
 
 
