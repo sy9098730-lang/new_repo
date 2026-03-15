@@ -1,10 +1,15 @@
-str="sosssssssurabhyadavsourabh"
+words = ["apple","ant","ball","bat","cat","car"]
 dic={}
-for i in str:
-    if i in dic:
-        dic[i]+=1
+for w in words:
+    first=w[0]
 
-    else :
-        dic[i]=1
+    if first not in dic:
+        dic[first]=[w]
+
+    else:
+        dic[first].append(w)
+    
+
+     
 
 print(dic)
