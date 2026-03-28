@@ -1,15 +1,7 @@
-words = ["apple","ant","ball","bat","cat","car"]
-dic={}
-for w in words:
-    first=w[0]
+num = input()
 
-    if first not in dic:
-        dic[first]=[w]
+num1 = num[0]
+num2 = num[-1]
 
-    else:
-        dic[first].append(w)
-    
-
-     
-
-print(dic)
+num3 = num1 + num2
+print(num3)
