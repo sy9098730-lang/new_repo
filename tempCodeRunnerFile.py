@@ -1,7 +1,11 @@
-num = input()
+t = (1,1,2,2,3,4,5)
+visited = []
 
-num1 = num[0]
-num2 = num[-1]
-
-num3 = num1 + num2
-print(num3)
+for i in t:
+    if i not in visited:
+        count = 0
+        for j in t:
+            if i == j:
+                count += 1
+        print(i, ":", count)
+        visited.append(i)
